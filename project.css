@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#car-cont{
+    position: relative;
+    /* border: solid red; */
+    height: 100vh;
+    width: 100%;
+}
+#road{
+    position: absolute;
+    height: 690px;
+    width: 3500px;
+    background-image: url(../assets/bakcgroung\ image.jpg);
+    background-position:center;
+    background-size: cover;
+    animation: backimg linear 4s infinite ;
+}
+
+#car-cont-1{
+    position: absolute;
+}
+#cari{
+    position: relative;
+    height: 100px;
+    width: 350px;
+    top: 440px;
+    left: 300px;
+    z-index: 1;
+
+    animation: carmove linear 2s infinite 
+}
+#tyre{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 487px;
+    left: 543px;
+    border: 3px solid blue;
+    border-radius: 25px;
+    z-index: 1;
+}
+#tyre-2{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 487px;
+    left: 331px;
+    border: 3px solid blue;
+    border-radius: 25px;
+    z-index: 1;
+}
+#road1{
+    position: absolute;
+    margin-top: 485px;
+    height: 23vh;
+    width: 3200px;
+    animation: road linear 2s infinite; 
+}
+
+ .tyre1,.tyre2{
+    animation: rotating linear .6s infinite 
+} 
+ @keyframes rotating{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+ }
+
+  @keyframes road{
+    from{transform: translateX(-1000px);}
+    to{transform: translateX(-2000px);}
+ } 
+@keyframes carmove{
+    0%{transform: translateY(-4px);}
+    50%{transform: translateY(3px);}
+    100%{transform: translateY(-4px);}
+
+}
+.nitro{
+    position: absolute;
+    height: 200px;
+    width: 220px;
+    top: 410px;
+    left: 120px;
+
+        
+}
+#nitrob{
+
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    height: 30px;
+    width: 70px;
+    background-color:transparent;
+    color: red;
+}
+#hornB{
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: groove gainsboro;
+}
+@keyframes backimg{
+    from{transform: translateX(10px);}
+    to{transform: translateX(-2000px);}
+ } 
